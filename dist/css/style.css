@@ -16,7 +16,7 @@ body {
 }
 
 .container #sidebar-logo {
-	background: linear-gradient(darkblue, lightblue);
+	background: linear-gradient(darkblue, #4889eb);
 }
 
 .container #sidebar-logo img {
@@ -32,9 +32,11 @@ body {
 	margin: auto;
 }
 
+
 .container #sidebar-form {
 	background-color: #f4f4f4;
 	width: 53vw;
+	height: 100%;
 }
 
 .container #sidebar-form p {
@@ -44,11 +46,15 @@ body {
 	margin-top: 1rem;
 }
 
-.container #sidebar-form img {
+.container #sidebar-form .panda {
 	display: block;
 	margin: auto;
 	width: 250px;
 	height: 200px;
+}
+
+.hide-on-large {
+	display: none;
 }
 
 ::placeholder {
@@ -87,37 +93,141 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 }
+#form input[type="email"]:focus,
+#form input[type="password"]:focus {
+	border: none;
+	border-bottom: 2px solid darkblue;
+}
 
+#form #remember {
+	margin-top: 20px;
+}
 #form #remember span {
+	display: inline;
 	color: #333;
+	padding-left: 2px;
+	margin: 0;
 	font-size: 0.8rem;
 }
 
-#form #submit-btn {
+#form #submit-section {
 	margin-top: 30px;
+	
 }
 
-#form #submit-btn a {
-	color: #333;
+#form #submit-section a {
+	font-size: 0.9rem;
+	color: #4d4b4b;
 	float: right;
 	clear: right;
 	margin-top:8px;
+	text-decoration: none;
+}
+#form #submit-section a:hover {
+	color: #4889eb;
 }
 
-#form #submit-btn input {
+#form #submit-section input {
 	border: none;
-	background-image: linear-gradient(to right,lightblue , darkblue);
-	width: 100px;
-	padding: 8px 20px;
+	border-radius: 4px;
+	background-image: linear-gradient(to right,#4889eb , darkblue);
+	width: 150px;
+	padding: 8px 0px;
 	color: #fff;
 	font-size: 1rem;
 	font-weight: bold;
+	cursor: pointer;
 }
+
+#form #submit-section input:hover{
+	transform: scale(1.05);
+	transition: ease-out 100ms;
+} 
 
 .team-name {
 	text-align: center !important;
 	font-weight: bold !important;
 	font-size: 1rem !important;
 	color: royalblue;
-	margin-top: 30px;
+	margin-top: 40px !important;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets and Ipads */
+@media only screen and (max-width: 768px){
+	.container #sidebar-form {
+		width: 100vw;
+		height: 100%;
+	}
+		
+	.container #sidebar-logo {
+		display: none;
+	}
+
+	.hide-on-large {
+		display: block;
+		margin: 1rem auto 0 auto;
+		width: 250px;
+		height: 80px;
+	}
+
+	.container #sidebar-form p {
+		font-size: 2rem;
+		margin-top: 1rem;
+	}
+	.container #sidebar-form .panda {
+		width: 200px;
+		height: 150px;
+	}
+	#form {
+		width: 350px;
+		height: 170px;
+	}
+	#form #submit-section {
+		margin-top: 15px;
+	}
+	.team-name {
+		margin-top: 25px !important;
+	}
+
+		
+}
+
+/* Smartphones */
+@media only screen and (max-width: 600px){
+	.container #sidebar-form {
+		width: 100vw;
+		height: 100%;
+	}
+		
+	.container #sidebar-logo {
+		display: none;
+	}
+
+	.hide-on-large {
+		display: block;
+		margin: 1rem auto 0 auto;
+		width: 250px;
+		height: 80px;
+	}
+
+	.container #sidebar-form p {
+		font-size: 2rem;
+		margin-top: 1rem;
+	}
+	.container #sidebar-form .panda {
+		width: 200px;
+		height: 150px;
+	}
+	#form {
+		width: 300px;
+		height: 170px;
+	}
+	#form #submit-section {
+		margin-top: 15px;
+	}
+	.team-name {
+		margin-top: 25px !important;
+	}
 }
