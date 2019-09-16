@@ -1,0 +1,123 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Verdana;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	width: 100vw;
+	height: 100vh;
+}
+
+.container #sidebar-logo {
+	background: linear-gradient(darkblue, lightblue);
+}
+
+.container #sidebar-logo img {
+	display: inline-block;
+	position: absolute;
+	left:0;
+	right:760px;
+	top:0;
+	bottom:180px;
+	width: 350px;
+	height: 100px;
+	color: #fff;
+	margin: auto;
+}
+
+.container #sidebar-form {
+	background-color: #f4f4f4;
+	width: 53vw;
+}
+
+.container #sidebar-form p {
+	text-align: center;
+	font-weight: bold;
+	font-size: 2.5rem;
+	margin-top: 1rem;
+}
+
+.container #sidebar-form img {
+	display: block;
+	margin: auto;
+	width: 250px;
+	height: 200px;
+}
+
+::placeholder {
+	color: #444;
+	font-size: 1rem;
+}
+
+#form {
+	position: relative;
+	background-color: #fff;
+	width: 400px;
+	height: 170px;
+	margin: auto;
+	box-shadow: 2px 1px 10px #333;
+}
+
+#form #email {
+	height: 70px;
+}
+
+#form span {
+	display: inline-block;
+	width: 100%;
+	padding: 20px;
+	margin-left: 20px;
+	font-size:0.8rem;
+}
+
+#form input[type="email"],
+#form input[type="password"] {
+	border: none;
+	border-bottom: 1px solid #333;
+	outline: 0;
+	display: block;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#form #remember span {
+	color: #333;
+	font-size: 0.8rem;
+}
+
+#form #submit-btn {
+	margin-top: 30px;
+}
+
+#form #submit-btn a {
+	color: #333;
+	float: right;
+	clear: right;
+	margin-top:8px;
+}
+
+#form #submit-btn input {
+	border: none;
+	background-image: linear-gradient(to right,lightblue , darkblue);
+	width: 100px;
+	padding: 8px 20px;
+	color: #fff;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.team-name {
+	text-align: center !important;
+	font-weight: bold !important;
+	font-size: 1rem !important;
+	color: royalblue;
+	margin-top: 30px;
+}
