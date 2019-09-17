@@ -11,50 +11,51 @@
     <div class="container">
         <!-- Left side -->
         <div id="sidebar-logo">
-            <img src="dist/img/nobio-light.png" />
+            <img src="dist/img/nobio-light.png" alt="light-image"/>
         </div>
 
         <!-- Right side -->
         <div id="sidebar-form">
             <!-- Logo for mobile and tablets -->
     
-            <img src="dist/img/nobio-dark.png" class="hide-on-large">
+            <img src="dist/img/nobio-dark.png" class="hide-on-large" alt="dark-image">
             
             <p>Hello there!</p>
             <p class="invite-txt">We're welcoming new members just now</p>
-            <img src="dist/img/nobi-panda.png" class="panda">
+            <img src="dist/img/nobi-panda.png" class="panda" alt="panda">
 
             <!-- The login form -->
             <form id="form">
-            	<div id="firstname" class="input-div">
+				
+            	<div  class="input-div">
                     <span>Firstname</span>
-                    <input type="text" />
+                    <input type="text" required id="firstname"/>
                 </div>
                 
-                <div id="lastname" class="input-div">
+                <div  class="input-div">
                     <span>Lastname</span>
-                    <input type="text" />
+                    <input type="text" required id="lastname" />
                 </div>
             
-                <div id="email" class="input-div">
+                <div  class="input-div">
                     <span>Email</span>
-                    <input type="email" />
+                    <input type="email" required id="email"/>
                 </div>
 
-                <div id="password" class="input-div">
+                <div class="input-div">
                     <span>Password</span>
-                    <input type="password" />
+                    <input type="password" required id="password"/>
                 </div>
                 
-                <div id="password2" class="input-div">
+                <div  class="input-div">
                     <span>Confirm Password</span>
-                    <input type="password" />
+                    <input type="password" required onclick="verifier()" id="password2"/>
                 </div>
 
-               <div id="remember">
+               <!--<div id="remember">
                     <input type="checkbox" />
                     <span>Remember Me</span>
-                </div> 
+                </div> -->
 
                 <div id="submit-section">
                     <!-- submit button -->
