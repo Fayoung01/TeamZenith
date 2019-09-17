@@ -21,29 +21,45 @@
             <img src="dist/img/nobio-dark.png" class="hide-on-large">
             
             <p>Hello there!</p>
+            <p class="invite-txt">We're welcoming new members just now</p>
             <img src="dist/img/nobi-panda.png" class="panda">
 
             <!-- The login form -->
             <form id="form">
-                <div id="email">
+            	<div id="firstname" class="input-div">
+                    <span>Firstname</span>
+                    <input type="text" />
+                </div>
+                
+                <div id="lastname" class="input-div">
+                    <span>Lastname</span>
+                    <input type="text" />
+                </div>
+            
+                <div id="email" class="input-div">
                     <span>Email</span>
                     <input type="email" />
                 </div>
 
-                <div style="height: 100px;" id="password">
+                <div id="password" class="input-div">
                     <span>Password</span>
                     <input type="password" />
                 </div>
+                
+                <div id="password2" class="input-div">
+                    <span>Confirm Password</span>
+                    <input type="password" />
+                </div>
 
-                <div id="remember">
+               <div id="remember">
                     <input type="checkbox" />
                     <span>Remember Me</span>
-                </div>
+                </div> 
 
                 <div id="submit-section">
                     <!-- submit button -->
-                    <input type="submit" value="Login" />
-                    <a href="#">Forgot Password?</a>
+                    <input type="submit" value="Join us" />
+                   <!-- <a href="#">Forgot Password?</a> -->
                 </div>
                 <p class="team-name">Team Zenith</p>
             </form>
