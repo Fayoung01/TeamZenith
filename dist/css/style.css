@@ -32,8 +32,7 @@ body {
 	margin: auto;
 }
 
-
-.container #sidebar-form {
+.container #sidebar-form  {
 	background-color: #f4f4f4;
 	width: 53vw;
 	height: 100%;
@@ -62,17 +61,17 @@ body {
 	font-size: 1rem;
 }
 
-#form {
+#form, #success-msg {
 	position: relative;
 	background-color: #fff;
 	width: 400px;
-	height: 170px;
-	margin: auto;
-	box-shadow: 2px 1px 10px #333;
-}
-
-#form #email {
-	height: 70px;
+	height: auto !important;
+	margin: 15px auto;
+	padding: 5px;
+	border-radius: 10px 0px 10px 0px;
+	-moz-box-shadow: 3px 3px 10px 2px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 3px 3px 10px 2px rgba(0,0,0,0.3);
+	box-shadow: 3px 3px 10px 2px rgba(0,0,0,0.3);
 }
 
 #form span {
@@ -82,24 +81,32 @@ body {
 	margin-left: 20px;
 	font-size:0.8rem;
 }
+.invite-txt{
+	margin: auto 20px;
+	font-size: 1.2rem !important;
+}
+.input-div{
+	height: 60px;
+	margin: 10px auto; 
+}
 
-#form input[type="email"],
-#form input[type="password"] {
+input {
 	border: none;
 	border-bottom: 1px solid #333;
 	outline: 0;
 	display: block;
 	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
+	font-size: 1rem;
 }
-#form input[type="email"]:focus,
-#form input[type="password"]:focus {
+
+input:focus{
 	border: none;
 	border-bottom: 2px solid darkblue;
 }
 
 #form #remember {
+	display: none;
 	margin-top: 20px;
 }
 #form #remember span {
@@ -111,27 +118,15 @@ body {
 }
 
 #form #submit-section {
-	margin-top: 30px;
-	
-}
-
-#form #submit-section a {
-	font-size: 0.9rem;
-	color: #4d4b4b;
-	float: right;
-	clear: right;
-	margin-top:8px;
-	text-decoration: none;
-}
-#form #submit-section a:hover {
-	color: #4889eb;
+	margin-top: 50px !important;
+	margin-bottom: 20px !important;
 }
 
 #form #submit-section input {
 	border: none;
 	border-radius: 4px;
 	background-image: linear-gradient(to right,#4889eb , darkblue);
-	width: 150px;
+	width: 100px;
 	padding: 8px 0px;
 	color: #fff;
 	font-size: 1rem;
@@ -149,8 +144,68 @@ body {
 	font-weight: bold !important;
 	font-size: 1rem !important;
 	color: royalblue;
-	margin-top: 40px !important;
+	margin-top: 20px !important;
+	margin-bottom: 20px !important;
 }
+
+/* Success page */
+#success-msg p{
+	font-size: 1rem !important;
+	margin: 10px;
+}
+
+#success-msg p:nth-child(1){
+	margin-top: 60px;
+	margin-bottom: 40px;
+	color: green;
+}
+
+#success-msg p:nth-child(2){
+	margin-bottom: 60px;
+	font-size: 1.2rem !important;
+}
+
+.button {
+	display: inline-block;
+	border-radius: 4px;
+	background-image: linear-gradient(to right,#4889eb , darkblue);
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 25px;
+	padding: 5px 10px;
+	width: 130px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+	text-decoration: none;
+	font-weight: normal;
+  }
+  
+  .button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+  }
+  
+  .button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+  }
+  
+  .button:hover span {
+	padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+	opacity: 1;
+	right: 0;
+  }
 
 /* Media Queries for Responsiveness */
 
