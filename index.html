@@ -25,21 +25,21 @@
             <img src="dist/img/nobi-panda.png" class="panda" alt="panda">
 
             <!-- The login form -->
-            <form id="form">
+            <form id="form" method="POST" action="php/main.php">
 				
             	<div  class="input-div">
                     <span>Firstname</span>
-                    <input type="text" required id="firstname"/>
+                    <input type="text" required name="firstname" id="firstname"/>
                 </div>
                 
                 <div  class="input-div">
                     <span>Lastname</span>
-                    <input type="text" required id="lastname" />
+                    <input type="text" required name="lastname" id="lastname" />
                 </div>
             
                 <div  class="input-div">
                     <span>Email</span>
-                    <input type="email" required id="email"/>
+                    <input type="email" required name="email" id="email"/>
                 </div>
 
                 <div class="input-div">
@@ -49,7 +49,7 @@
                 
                 <div  class="input-div">
                     <span>Confirm Password</span>
-                    <input type="password" required onclick="verifier()" id="password2"/>
+                    <input type="password" required name="password" onclick="verifier()" id="password2"/>
                 </div>
 
                <!--<div id="remember">
