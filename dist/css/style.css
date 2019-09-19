@@ -76,6 +76,12 @@ body {
 	box-shadow: 3px 3px 10px 2px rgba(0,0,0,0.3);
 }
 
+.welcome{
+	vertical-align: center;
+	margin: 12rem auto 0 auto;
+	text-align: center;
+}
+
 #form span {
 	display: inline-block;
 	width: 100%;
@@ -213,6 +219,11 @@ input:focus{
   .button:hover span:after {
 	opacity: 1;
 	right: 0;
+  }
+
+  /* welcome page */
+  .welcome-msg{
+	  margin-top: 2em;
   }
 
 /* Media Queries for Responsiveness */
