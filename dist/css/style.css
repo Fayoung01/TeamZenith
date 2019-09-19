@@ -138,7 +138,13 @@ input:focus{
 	transform: scale(1.05);
 	transition: ease-out 100ms;
 } 
-
+.redirection{
+	color: #424242;
+	font-size: 1rem !important;
+	margin: 40px auto;
+	cursor: pointer;
+	text-decoration: none;
+}
 .team-name {
 	text-align: center !important;
 	font-weight: bold !important;
