@@ -17,6 +17,7 @@ body {
 
 .container #sidebar-logo {
 	background: linear-gradient(darkblue, #4889eb);
+	height: 100%;
 }
 
 .container #sidebar-logo img {
@@ -36,6 +37,7 @@ body {
 	background-color: #f4f4f4;
 	width: 53vw;
 	height: 100%;
+	overflow: scroll;
 }
 
 .container #sidebar-form p {
