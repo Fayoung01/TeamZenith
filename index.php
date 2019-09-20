@@ -22,7 +22,7 @@
 
         <!-- Right side -->
         <div id="sidebar-form">
-            <!-- Logo for mobile and tablets -->
+            <!-- Logo for mobile and tablets views-->
     
             <img src="dist/img/nobio-dark.png" class="hide-on-large" alt="dark-image">
             
