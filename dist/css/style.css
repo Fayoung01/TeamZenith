@@ -16,7 +16,7 @@ body {
 }
 
 .container #sidebar-logo {
-	background: linear-gradient( #636262, #1b212c);
+	background: linear-gradient(darkblue, #4889eb);
 	height: 100%;
 }
 
@@ -133,7 +133,7 @@ input:focus{
 #form #submit-section input {
 	border: none;
 	border-radius: 4px;
-	background-image: linear-gradient(to right,#2af578, #02ac1e);
+	background-image: linear-gradient(to right,#4889eb , darkblue);
 	width: 100px;
 	padding: 8px 0px;
 	color: #fff;
@@ -182,7 +182,7 @@ input:focus{
 .button {
 	display: inline-block;
 	border-radius: 4px;
-	background-image: linear-gradient(to right,#2af578, #02ac1e);
+	background-image: linear-gradient(to right,#4889eb , darkblue);
 	border: none;
 	color: #FFFFFF;
 	text-align: center;
