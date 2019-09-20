@@ -45,7 +45,16 @@
                
             </form> 
             <p class="team-name">Team Zenith</p>
+            <div id="google_translate_element" class="redirection"></div>
         </div>
     </div>
+    
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 
+            'google_translate_element');
+        }
+    </script>
 </body>
 </html>
