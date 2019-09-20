@@ -66,7 +66,7 @@
                 </div>
                
             </form>
-            <p><a class="redirection" href="/login.php">Go to Login page</a></p> 
+            <p><a class="redirection" href="data/login.php">Go to Login page</a></p> 
             <p class="team-name">Team Zenith</p>
         </div>
     </div>
