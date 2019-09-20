@@ -1,13 +1,13 @@
 <?php
 
-	$ServerName = "localhost";
+	$DBHost = "us-cdbr-iron-east-02.cleardb.net";
 
-	$root = "root";
+	$username = "bfc778a71f3cbd";
 
-	$password = "";
+	$password = "3225a1ad";
 
-	$DBName = "teamzenith";
+	$DBName = "heroku_42cb250ace817bb";
 
-	$connection = mysqli_connect($ServerName, $root, $password, $DBName);
+	$connection = mysqli_connect($DBHost, $username, $password, $DBName);
 	
 ?>
